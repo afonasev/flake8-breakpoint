@@ -135,16 +135,18 @@ description = "Flake8 awesome plugins pack"
 name = "flake8-awesome"
 optional = false
 python-versions = ">=3.6,<4.0"
-version = "0.2.0"
+version = "1.0.0"
 
 [package.dependencies]
 flake8 = ">=3.7,<4.0"
+flake8-breakpoint = ">=1.0,<2.0"
 flake8-builtins = ">=1.4,<2.0"
 flake8-comprehensions = ">=1.4,<2.0"
 flake8-eradicate = ">=0.2.0,<0.3.0"
 flake8-if-expr = ">=0.2.1,<0.3.0"
 flake8-isort = ">=2.6,<3.0"
 flake8-logging-format = ">=0.6.0,<0.7.0"
+flake8-print = ">=3.1,<4.0"
 flake8-pytest = ">=1.3,<2.0"
 flake8-return = ">=0.3.0,<0.4.0"
 pep8-naming = ">=0.8.0,<0.9.0"
@@ -153,7 +155,7 @@ pep8-naming = ">=0.8.0,<0.9.0"
 category = "dev"
 description = "Check for python builtins being used as variables or parameters."
 name = "flake8-builtins"
-optional = false
+optional = true
 python-versions = "*"
 version = "1.4.1"
 
@@ -164,7 +166,7 @@ flake8 = "*"
 category = "dev"
 description = "A flake8 plugin to help you write better list/set/dict comprehensions."
 name = "flake8-comprehensions"
-optional = false
+optional = true
 python-versions = "*"
 version = "1.4.1"
 
@@ -188,7 +190,7 @@ flake8 = ">=3.5,<4.0"
 category = "dev"
 description = "Check for if expression (ternary operator)"
 name = "flake8-if-expr"
-optional = false
+optional = true
 python-versions = ">=3.6,<4.0"
 version = "0.2.1"
 
@@ -212,7 +214,7 @@ testfixtures = "*"
 category = "dev"
 description = "Flake8 extension to validate (lack of) logging format strings"
 name = "flake8-logging-format"
-optional = false
+optional = true
 python-versions = "*"
 version = "0.6.0"
 
@@ -239,7 +241,7 @@ flake8 = "*"
 category = "dev"
 description = "print statement checker plugin for flake8"
 name = "flake8-print"
-optional = false
+optional = true
 python-versions = "*"
 version = "3.1.0"
 
@@ -263,9 +265,9 @@ flake8 = "*"
 category = "dev"
 description = "Flake8 plugin that checks return values"
 name = "flake8-return"
-optional = false
+optional = true
 python-versions = ">=3.6,<4.0"
-version = "0.3.1"
+version = "0.3.2"
 
 [package.dependencies]
 flake8-plugin-utils = ">=0.2.0,<0.3.0"
@@ -505,7 +507,7 @@ python-versions = "*"
 version = "1.11.1"
 
 [metadata]
-content-hash = "89aaf311ce0c6607b4a181d9919a9560c4b57461bd4c63d3d295bfa309367316"
+content-hash = "66f66c28f0ea4f7637d23fbb1c792a970f8147258451738bfef222ae64132767"
 python-versions = "^3.6"
 
 [metadata.hashes]
@@ -521,7 +523,7 @@ coverage = ["0c5fe441b9cfdab64719f24e9684502a59432df7570521563d7b1aff27ac755f", 
 entrypoints = ["589f874b313739ad35be6e0cd7efde2a4e9b6fea91edcc34e58ecbb8dbe56d19", "c70dd71abe5a8c85e55e12c19bd91ccfeec11a6e99044204511f9ed547d48451"]
 eradicate = ["4ffda82aae6fd49dfffa777a857cb758d77502a1f2e0f54c9ac5155a39d2d01a"]
 flake8 = ["859996073f341f2670741b51ec1e67a01da142831aa1fdc6242dbf88dffbe661", "a796a115208f5c03b18f332f7c11729812c8c3ded6c46319c59b53efd3819da8"]
-flake8-awesome = ["59ed686b16a7c5df058e46fae468ce8ee204beed4e7caf5403c96071d945452b", "9b1d409bbb378a59f08dd980cf523989b383544924a7887f3f3153a8a6d6eee7"]
+flake8-awesome = ["219c59d702280f9f6c3a597b033f1aca38a73cce629702e4948f557f3f17fb9a", "a0b40ca8f960d2460064219b16417cdf6eb4d49304ae020b97f4fcdba66c9445"]
 flake8-builtins = ["8d806360767947c0035feada4ddef3ede32f0a586ef457e62d811b8456ad9a51", "cd7b1b7fec4905386a3643b59f9ca8e305768da14a49a7efb31fe9364f33cd04"]
 flake8-comprehensions = ["b83891fec0e680b07aa1fd92e53eb6993be29a0f3673a09badbe8da307c445e0", "e4ccf1627f75f192eb7fde640f5edb81c98d04b1390df9d4145ffd7710bb1ef2"]
 flake8-eradicate = ["0953cd3bcae4bfd04d45075234e0b5fd465ff50ecc56cdcaf0027da751632127", "c762fbb5c3e3694c9ba656d38477b2dcca6599b8baeee4984d05d655591a6f83"]
@@ -532,7 +534,7 @@ flake8-plugin-utils = ["a46e95fcb745b72fa7e7528f76a38045af569da1609d2fcf90c09707
 flake8-polyfill = ["12be6a34ee3ab795b19ca73505e7b55826d5f6ad7230d31b18e106400169b9e9", "e44b087597f6da52ec6393a709e7108b2905317d0c0b744cdca6208e670d8eda"]
 flake8-print = ["5010e6c138b63b62400da4b06afa33becc5e08bd1fcce9af3752445cf3342f54"]
 flake8-pytest = ["61686128a79e1513db575b2bcac351081d5a293811ddce2d5dfc25e8c762d33e", "b4d6703f7d7b646af1e2660809e795886dd349df11843613dbe6515efa82c0f3"]
-flake8-return = ["8f1a0c31e8904d9dfc6bc33775a0277832f887fc4b91db00f06012aff79f8e90", "db2b7b20566645c528b465719957df93ed1bcdddfdfbb7405ace687d7274db78"]
+flake8-return = ["364dae3100c4724f132150e7811e89875a2024725eb96753b032a914c2e1812c", "3762509d5305c2bad8b9a286b40c4ee98fa3744fb274329d99133d9a01de9f99"]
 isort = ["08f8e3f0f0b7249e9fad7e5c41e2113aba44969798a26452ee790c06f155d4ec", "4e9e9c4bd1acd66cf6c36973f29b031ec752cbfd991c69695e4e259f9a756927"]
 lazy-object-proxy = ["0ce34342b419bd8f018e6666bfef729aec3edf62345a53b537a4dcc115746a33", "1b668120716eb7ee21d8a38815e5eb3bb8211117d9a90b0f8e21722c0758cc39", "209615b0fe4624d79e50220ce3310ca1a9445fd8e6d3572a896e7f9146bbf019", "27bf62cb2b1a2068d443ff7097ee33393f8483b570b475db8ebf7e1cba64f088", "27ea6fd1c02dcc78172a82fc37fcc0992a94e4cecf53cb6d73f11749825bd98b", "2c1b21b44ac9beb0fc848d3993924147ba45c4ebc24be19825e57aabbe74a99e", "2df72ab12046a3496a92476020a1a0abf78b2a7db9ff4dc2036b8dd980203ae6", "320ffd3de9699d3892048baee45ebfbbf9388a7d65d832d7e580243ade426d2b", "50e3b9a464d5d08cc5227413db0d1c4707b6172e4d4d915c1c70e4de0bbff1f5", "5276db7ff62bb7b52f77f1f51ed58850e315154249aceb42e7f4c611f0f847ff", "61a6cf00dcb1a7f0c773ed4acc509cb636af2d6337a08f362413c76b2b47a8dd", "6ae6c4cb59f199d8827c5a07546b2ab7e85d262acaccaacd49b62f53f7c456f7", "7661d401d60d8bf15bb5da39e4dd72f5d764c5aff5a86ef52a042506e3e970ff", "7bd527f36a605c914efca5d3d014170b2cb184723e423d26b1fb2fd9108e264d", "7cb54db3535c8686ea12e9535eb087d32421184eacc6939ef15ef50f83a5e7e2", "7f3a2d740291f7f2c111d86a1c4851b70fb000a6c8883a59660d95ad57b9df35", "81304b7d8e9c824d058087dcb89144842c8e0dea6d281c031f59f0acf66963d4", "933947e8b4fbe617a51528b09851685138b49d511af0b6c0da2539115d6d4514", "94223d7f060301b3a8c09c9b3bc3294b56b2188e7d8179c762a1cda72c979252", "ab3ca49afcb47058393b0122428358d2fbe0408cf99f1b58b295cfeb4ed39109", "bd6292f565ca46dee4e737ebcc20742e3b5be2b01556dafe169f6c65d088875f", "cb924aa3e4a3fb644d0c463cad5bc2572649a6a3f68a7f8e4fbe44aaa6d77e4c", "d0fc7a286feac9077ec52a927fc9fe8fe2fabab95426722be4c953c9a8bede92", "ddc34786490a6e4ec0a855d401034cbd1242ef186c20d79d2166d6a4bd449577", "e34b155e36fa9da7e1b7c738ed7767fc9491a62ec6af70fe9da4a057759edc2d", "e5b9e8f6bda48460b7b143c3821b21b452cb3a835e6bbd5dd33aa0c8d3f5137d", "e81ebf6c5ee9684be8f2c87563880f93eedd56dd2b6146d8a725b50b7e5adb0f", "eb91be369f945f10d3a49f5f9be8b3d0b93a4c2be8f8a5b83b0571b8123e0a7a", "f460d1ceb0e4a5dcb2a652db0904224f367c9b3c1470d5a7683c0480e582468b"]
 mccabe = ["ab8a6258860da4b6677da4bd2fe5dc2c659cff31b3ee4f7f5d64e79735b80d42", "dd8d182285a0fe56bace7f45b5e7d1a6ebcbf524e8f3bd87eb0f125271b8831f"]
