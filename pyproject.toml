@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "flake8-breakpoint"
-version = "0.0.0"
+version = "1.0.0"
 description = "Flake8 plugin that check forgotten breakpoints"
 authors = ["Evgeniy Afonasev <ea.afonasev@gmail.com>"]
 license = "MIT"
