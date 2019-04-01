@@ -25,7 +25,7 @@ def function():
     breakpoint()  # error!
 ```
 
-* B602 import debug module found
+* B602 import of debug module found
 
 ```python
 def function():

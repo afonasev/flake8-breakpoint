@@ -8,4 +8,4 @@ class BreakpointFound(Error):
 
 class DebugModuleImportFound(Error):
     code = 'B602'
-    message = 'import debug module found'
+    message = 'import of debug module found'
