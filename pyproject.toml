@@ -14,7 +14,7 @@ B60 = 'flake8_breakpoint.plugin:BreakpointPlugin'
 
 [tool.poetry.dependencies]
 python = "^3.6"
-flake8-plugin-utils = "^0.2.1"
+flake8-plugin-utils = "^1.0"
 
 [tool.poetry.dev-dependencies]
 black = {version = "^18.3-alpha.0",allows-prereleases = true}
